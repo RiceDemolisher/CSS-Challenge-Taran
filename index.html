@@ -2,73 +2,90 @@
 <html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../CSS-Challenge-Taran/index.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 
 <body>
+
 <div class="wrapper">
-<div class="alles">
-    <nav>
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-            <input type="text" placeholder="">
-        </ul>
-    </nav>
-    <div id="img">
-    <header>
-        <p class="headerL">CHALLENGE</p>
-        <p class="headerS">Effe Bikkelen op een mooie website</p>
-    </header>
+    <div class="alles">
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="archeologie.html">ARCHEOLOGIE</a>
+                <a href="backpacking.html">BACKPACKING</a>
+                <a href="bergbeklimmen.html">BERGBEKLIMMEN</a>
+            </div>
+        </div>
+
+        <script>
+
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
 
 
-    <div class="post">
-        <section class="post">
-            <footer>
-                <p class="post-footerS">18 JANUARI 2019</p>
-                <p class="post-footerL"><a class="post-footerLink" href="lente.html"> TIS WEER LENTE</a></p>
-            </footer>
-        </section>
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <div id="img">
+            <header>
+                <p class="headerL"><a href="index.html">CHALLENGE</a></p>
+                <p class="headerS">Effe Bikkelen op een mooie website</p>
+            </header>
+
+            <div class="post">
+                <footer>
+                    <p class="post-footerS">18 JANUARI 2019</p>
+                    <p class="post-footerL"><a class="post-footerLink" href="lente.html"> TIS WEER LENTE</a></p>
+                </footer>
+            </div>
+
+            <div class="post">
+                <footer>
+                    <p class="post-footerS">18 JANUARI 2019</p>
+                    <p class="post-footerL"><a class="post-footerLink" href="kijken.html"> VERDER KIJKEN</a></p>
+                </footer>
+            </div>
+
+            <div class="post">
+                <footer>
+                    <p class="post-footerS">18 JANUARI 2019</p>
+                    <p class="post-footerL"><a class="post-footerLink" href="backpacking.html"> BACKPACKING</a></p>
+                </footer>
+            </div>
+
+            <div class="post">
+                <footer>
+                    <p class="post-footerS">18 JANUARI 2019</p>
+                    <p class="post-footerL"><a class="post-footerLink" href="wildcamperen.html"> WILDCAMPEREN</a></p>
+                </footer>
+            </div>
+        </div>
     </div>
 
-
-    <div class="post">
-        <section class="post">
-            <footer>
-                <p class="post-footerS">18 JANUARI 2019</p>
-                <p class="post-footerL"><a class="post-footerLink" href="lente.html"> TIS WEER LENTE</a></p>
-            </footer>
-        </section>
-    </div>
-
-
-    <div class="post">
-        <section class="post">
-            <footer>
-                <p class="post-footerS">18 JANUARI 2019</p>
-                <p class="post-footerL"><a class="post-footerLink" href="lente.html"> TIS WEER LENTE</a></p>
-            </footer>
-        </section>
-    </div>
-
-
-    <div class="post">
-        <section class="post">
-            <footer>
-                <p class="post-footerS">18 JANUARI 2019</p>
-                <p class="post-footerL"><a class="post-footerLink" href="lente.html"> TIS WEER LENTE</a></p>
-            </footer>
-        </section>
-    </div>
-    </div>
-
-</div>
 </div>
 </body>
 
