@@ -286,7 +286,7 @@ li a {
     }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1230px) {
     .nextLP {
         color: white;
         position: absolute;
