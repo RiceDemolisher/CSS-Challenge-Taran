@@ -105,7 +105,8 @@ li a:hover {
     font-size: x-large;
     color: white;
 }
-.headerLL{
+
+.headerLL {
     color: white;
 }
 
@@ -132,7 +133,7 @@ input[type=text]:focus {
 
 /*Navbar*/
 
-a{
+a {
     text-decoration: none;
 
 }
@@ -183,15 +184,28 @@ li a {
     display: inline-block;
     padding: 10px;
 }
-.next{
+
+.next {
     float: right;
     padding-right: 20px;
     color: black;
 }
-.nextL{
+
+.nextL {
     color: black;
 }
-.back{
+
+.nextLP {
+    color: transparent;
+
+}
+
+.backLP {
+    color: transparent;
+
+}
+
+.back {
     float: left;
     padding-left: 20px;
 }
@@ -205,6 +219,20 @@ li a {
 
     }
 
+    .nextLP {
+        color: transparent;
+        position: absolute;
+        left: 20px;
+
+    }
+
+    .backLP {
+        color: transparent;
+        position: absolute;
+        left: 20px;
+
+    }
+
     img {
         box-sizing: border-box;
         width: 100%;
@@ -212,7 +240,6 @@ li a {
         /*margin-left: 20px;*/
         padding-left: 20px;
         padding-right: 20px;
-
 
 
     }
@@ -249,6 +276,7 @@ li a {
 
     }
 
+
     img {
         max-width: 500px;
     }
@@ -256,6 +284,31 @@ li a {
     section.post {
         width: 341px;
     }
+}
+
+@media all and (min-width: 1200px) {
+    .nextLP {
+        color: white;
+        position: absolute;
+        top: 600px;
+        left: 1100px;
+        font-weight: bolder;
+        font-size: 200%;
+    }
+
+    .backLP {
+        color: white;
+        position: absolute;
+        top: 600px;
+        right: 1100px;
+        font-weight: bolder;
+        font-size: 200%;
+    }
+
+    .nextL {
+        color: transparent;
+    }
+
 }
 
 
@@ -284,15 +337,16 @@ li a {
 
 /*Dropdown Menu*/
 
-.burger{
+.burger {
     width: 20px;
     height: 2px;
     background-color: white;
-    margin: 3px ;
+    margin: 3px;
 
 }
+
 .dropbtn {
-    background-color:#19181A ;
+    background-color: #19181A;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -320,7 +374,7 @@ li a {
     background-color: #19181A;
     min-width: 160px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -328,13 +382,17 @@ li a {
     color: white;
     text-align: center;
     font-size: 20px;
-    padding-top: 5px;
-
+    padding-top: 4px;
+    padding-bottom: 5px;
     text-decoration: none;
     display: block;
 }
 
 
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {
+    background-color: #ddd;
+}
 
-.show {display: block;}
+.show {
+    display: block;
+}
